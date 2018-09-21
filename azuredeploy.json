@@ -3,55 +3,86 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "type": "string"
+            "type": "string",
+			"defaultValue":"northeurope"
         },
         "networkInterfaceName": {
             "type": "string"
+			,"defaultvalue": "demotest948"
         },
         "networkSecurityGroupName": {
-            "type": "string"
+            "type": "string",
+			,"defaultvalue": "demotest-nsg"
         },
         "networkSecurityGroupRules": {
-            "type": "array"
+            "type": "array",
+			 ,"defaultvalue": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
         },
         "virtualNetworkName": {
             "type": "string"
+			 ,"defaultvalue": "VMMCW-vnet"
         },
         "addressPrefix": {
             "type": "string"
+			 ,"defaultvalue": "10.0.0.0/24"
         },
         "subnetName": {
             "type": "string"
+			,"defaultvalue": "default"
         },
         "subnetPrefix": {
             "type": "string"
+			 ,"defaultvalue": "10.0.0.0/24"
         },
         "publicIpAddressName": {
             "type": "string"
+			 ,"defaultvalue": "demotest-ip"
         },
         "publicIpAddressType": {
             "type": "string"
+			 ,"defaultvalue": "Dynamic"
+			 
         },
         "publicIpAddressSku": {
             "type": "string"
+			 ,"defaultvalue": "Basic"
         },
         "virtualMachineName": {
             "type": "string"
         },
         "virtualMachineRG": {
             "type": "string"
+			 ,"defaultvalue": "VMMCW"
         },
         "osDiskType": {
             "type": "string"
+			 ,"defaultvalue": "Premium_LRS"
         },
         "virtualMachineSize": {
             "type": "string"
+			 ,"defaultvalue": "Standard_D4s_v3"
         },
         "adminUsername": {
             "type": "string"
+			 ,"defaultvalue": "workshopMCW"
         },
         "adminPassword": {
             "type": "secureString"
+			,"defaultvalue": "1PasswordWorkshop1"
         }
     },
     "variables": {
@@ -193,13 +224,13 @@
                 },
                 "parameters": {
                     "vmName": {
-                        "value": "demotest"
+                        "value": "[parameters('virtualMachineName')]"
                     },
                     "location": {
-                        "value": "northeurope"
+                        "value": "[parameters('location')]""
                     },
                     "fileUris": {
-                        "value": "https://iaasv2tempstoreneurope.blob.core.windows.net/vmextensionstemporary-1003bffd802885cc-20180921155520815/webdevstation%5B1%5D.cmd?sv=2017-04-17&sr=c&sig=2hFwFzPFjJ6Qp%2FlgU9o3jPpaxIQqxVhT%2B9Feo2KjPtE%3D&se=2018-09-22T15%3A55%3A20Z&sp=rw"
+                        "value": "https://raw.githubusercontent.com/jivane/chocolatey-dev/master/webdevstation.cmd"
                     }
                 }
             },

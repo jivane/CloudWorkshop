@@ -2,70 +2,10 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "location": {
-            "value": "northeurope"
-        },
-        "networkInterfaceName": {
-            "value": "demotest948"
-        },
-        "networkSecurityGroupName": {
-            "value": "demotest-nsg"
-        },
-        "networkSecurityGroupRules": {
-            "value": [
-                {
-                    "name": "RDP",
-                    "properties": {
-                        "priority": 300,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "3389"
-                    }
-                }
-            ]
-        },
-        "virtualNetworkName": {
-            "value": "VMMCW-vnet"
-        },
-        "addressPrefix": {
-            "value": "10.0.0.0/24"
-        },
-        "subnetName": {
-            "value": "default"
-        },
-        "subnetPrefix": {
-            "value": "10.0.0.0/24"
-        },
-        "publicIpAddressName": {
-            "value": "demotest-ip"
-        },
-        "publicIpAddressType": {
-            "value": "Dynamic"
-        },
-        "publicIpAddressSku": {
-            "value": "Basic"
-        },
+       
         "virtualMachineName": {
             "value": "demotest"
-        },
-        "virtualMachineRG": {
-            "value": "VMMCW"
-        },
-        "osDiskType": {
-            "value": "Premium_LRS"
-        },
-        "virtualMachineSize": {
-            "value": "Standard_D4s_v3"
-        },
-        "adminUsername": {
-            "value": "workshopMCW1"
-        },
-        "adminPassword": {
-            "value": "1PasswordWorkshop1"
         }
+      
     }
 }
