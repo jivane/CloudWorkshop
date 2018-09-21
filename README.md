@@ -7,7 +7,7 @@
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.png"/>
 </a>
 
-<a href="https://azuredeploy.net/?repository=https://github.com/jivane/CloudWorkshop/master/DevOps%20OSS" target="_blank">
+<a href="https://azuredeploy.net/?repository=https://github.com/jivane/CloudWorkshop" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
