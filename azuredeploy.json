@@ -12,7 +12,7 @@
         },
         "networkSecurityGroupName": {
             "type": "string",
-			,"defaultvalue": "demotest-nsg"
+			"defaultvalue": "demotest-nsg"
         },
         "networkSecurityGroupRules": {
             "type": "array",
