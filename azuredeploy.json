@@ -8,15 +8,15 @@
         },
         "networkInterfaceName": {
             "type": "string",
-			"defaultvalue": "demotest948"
+			"defaultValue": "demotest948"
         },
         "networkSecurityGroupName": {
             "type": "string",
-			"defaultvalue": "demotest-nsg"
+			"defaultValue": "demotest-nsg"
         },
         "networkSecurityGroupRules": {
             "type": "array",
-			 "defaultvalue": [
+			 "defaultValue": [
                 {
                     "name": "RDP",
                     "properties": {
@@ -34,55 +34,55 @@
         },
         "virtualNetworkName": {
             "type": "string"
-			 ,"defaultvalue": "VMMCW-vnet"
+			 ,"defaultValue": "VMMCW-vnet"
         },
         "addressPrefix": {
             "type": "string"
-			 ,"defaultvalue": "10.0.0.0/24"
+			 ,"defaultValue": "10.0.0.0/24"
         },
         "subnetName": {
             "type": "string"
-			,"defaultvalue": "default"
+			,"defaultValue": "default"
         },
         "subnetPrefix": {
             "type": "string"
-			 ,"defaultvalue": "10.0.0.0/24"
+			 ,"defaultValue": "10.0.0.0/24"
         },
         "publicIpAddressName": {
             "type": "string"
-			 ,"defaultvalue": "demotest-ip"
+			 ,"defaultValue": "demotest-ip"
         },
         "publicIpAddressType": {
             "type": "string"
-			 ,"defaultvalue": "Dynamic"
+			 ,"defaultValue": "Dynamic"
 			 
         },
         "publicIpAddressSku": {
             "type": "string"
-			 ,"defaultvalue": "Basic"
+			 ,"defaultValue": "Basic"
         },
         "virtualMachineName": {
             "type": "string"
         },
         "virtualMachineRG": {
             "type": "string"
-			 ,"defaultvalue": "VMMCW"
+			 ,"defaultValue": "VMMCW"
         },
         "osDiskType": {
             "type": "string"
-			 ,"defaultvalue": "Premium_LRS"
+			 ,"defaultValue": "Premium_LRS"
         },
         "virtualMachineSize": {
             "type": "string"
-			 ,"defaultvalue": "Standard_D4s_v3"
+			 ,"defaultValue": "Standard_D4s_v3"
         },
         "adminUsername": {
             "type": "string"
-			 ,"defaultvalue": "workshopMCW"
+			 ,"defaultValue": "workshopMCW"
         },
         "adminPassword": {
             "type": "secureString"
-			,"defaultvalue": "1PasswordWorkshop1"
+			,"defaultValue": "1PasswordWorkshop1"
         }
     },
     "variables": {
