@@ -230,7 +230,7 @@
                         "value": "northeurope"
                     },
                     "fileUris": {
-                        "value": "https://csbdac3d03527dex49d2xa79.blob.core.windows.net/script/ArmUpdate.ps1?sp=r&st=2018-09-22T17:06:20Z&se=2019-09-23T01:06:20Z&spr=https&sv=2017-11-09&sig=iBOSu0gNSYSgcw8E7VjMxAo9HQGZ7EVO0IBaG3TVhuA%3D&sr=b"
+                        "value": "https://raw.githubusercontent.com/jivane/CloudWorkshop/master/ArmUpdate.ps1"
                     }
                 }
             },
