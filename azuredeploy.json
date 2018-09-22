@@ -227,10 +227,10 @@
                         "value": "[parameters('virtualMachineName')]"
                     },
                     "location": {
-                        "value": "[parameters('location')]"
+                        "value": "northeurope"
                     },
                     "fileUris": {
-                        "value": "https://raw.githubusercontent.com/jivane/chocolatey-dev/master/webdevstation.cmd"
+                        "value": "https://iaasv2tempstoreneurope.blob.core.windows.net/vmextensionstemporary-1003bffd802885cc-20180921155520815/webdevstation%5B1%5D.cmd?sv=2017-04-17&sr=c&sig=2hFwFzPFjJ6Qp%2FlgU9o3jPpaxIQqxVhT%2B9Feo2KjPtE%3D&se=2018-09-22T15%3A55%3A20Z&sp=rw"
                     }
                 }
             },
