@@ -227,7 +227,7 @@
                         "value": "[parameters('virtualMachineName')]"
                     },
                     "location": {
-                        "value": "[parameters('location')]""
+                        "value": "[parameters('location')]"
                     },
                     "fileUris": {
                         "value": "https://raw.githubusercontent.com/jivane/chocolatey-dev/master/webdevstation.cmd"
